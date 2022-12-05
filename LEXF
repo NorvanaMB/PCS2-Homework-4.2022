@@ -1,0 +1,14 @@
+#Enumerating k-mers Lexicographically
+
+import math
+import itertools
+
+def pe(s,n):
+	alpha = list(s.split(" "))
+	copy = alpha[:]
+	for p in itertools.product(copy, repeat=n):
+		print ("".join(p))
+	
+s = "A B C D E F G H I J"
+n = 2
+pe(s, n)
